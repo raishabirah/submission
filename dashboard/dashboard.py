@@ -1,9 +1,10 @@
+import os
 import streamlit as st
 import pandas as pd
 import plotly.express as px
 
 # Load data
-current_directory = os.path.dirname(os.path.abspath(__file__))
+current_directory = os.getcwd()
 day_path = os.path.join(current_directory, "day.csv")
 hour_path = os.path.join(current_directory, "hour.csv")
 
