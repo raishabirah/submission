@@ -3,8 +3,12 @@ import pandas as pd
 import plotly.express as px
 
 # Load data
-df_day = pd.read_csv("day.csv")
-df_hour = pd.read_csv("hour.csv")
+current_directory = os.getcwd()
+day_path = os.path.join(current_directory, "day.csv")
+hour_path = os.path.join(current_directory, "hour.csv")
+
+df_day = pd.read_csv(day_path)
+df_hour = pd.read_csv(hour_path)
 
 # Sidebar
 st.sidebar.title("Proyek Analisis Data: Bike Sharing Dataset")
