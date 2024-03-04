@@ -3,8 +3,8 @@ import pandas as pd
 import plotly.express as px
 
 # Load data
-df_day = pd.read_csv("../data/day.csv")
-df_hour = pd.read_csv("../data/hour.csv")
+df_day = pd.read_csv("day.csv")
+df_hour = pd.read_csv("hour.csv")
 
 # Sidebar
 st.sidebar.title("Proyek Analisis Data: Bike Sharing Dataset")
